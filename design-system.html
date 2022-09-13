@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Design System</h1>
+
+        <section id="colors">
+            <h1 class="numbered-title"><span>01 </span> Colors</h1>
+
+            <div class=" flex">
+                <div class="color-container text-light" style="flex-grow:1 ;">
+                    <div style="padding:3rem 1rem 1rem; border:1px solid white">
+                        #0B0D17
+                    </div>
+                    <p>RGB 11,12,23</p>
+                    <p>HSL 230, 35%, 7%</p>
+                </div>
+                <div class="color-container" style="flex-grow:1 ;">
+                    <div style="padding:3rem 1rem 1rem; border:1px solid white" class="bg-accent">
+                        #0B0D17
+                    </div>
+                    <p class="text-light">RGB 208,214,249</p>
+                    <p class="text-light">HSL 231, 77%, 90%</p>
+                </div>
+                <div class="color-container" style="flex-grow:1 ;">
+                    <div style="padding:3rem 1rem 1rem; border:1px solid white" class="bg-white">
+                        #FFFFFF
+                    </div>
+                    <p class="text-light">RGB 255,255,255</p>
+                    <p class="text-light">HSL 0, 0%, 100%</p>
+                </div>
+            </div>
+
+            
+        </section>
+
+        <section id="typography" style="margin: 4rem 0;">
+            <h2 class="numbered-title"><span>02 </span>Typography</h2>
+            <div class="flex">
+                <div style="flex-basis:100%;" class="flow">
+                    <div>
+                        <p class="text-light">Heading 1 - Bellefair Regular -150px</p>
+                        <p class="fs-900 ff-serif uppercase">Earth</p>
+                    </div>
+                    <div>
+                        <p class="text-light">Heading 2 - Bellefair Regular -100px</p>
+                        <p class="fs-800 uppercase ">Venus</p>
+                    </div>
+                    <div>
+                        <p class="text-light">Heading 3 - Bellefair Regular -56px</p>
+                        <p class="fs-700 uppercase">Jupiter & Saturn</p>
+                    </div>
+                    <div>
+                        <p class="text-light">Heading 4 - Bellefair Regular -32px</p>
+                        <p class="fs-500 uppercase">Uranus, Neptune, & Pluto</p>
+                    </div>
+                    <div>
+                        <p class="text-light">Heading 5 - Barlow Condensed Regular -28px -4.75 Character space</p>
+                        <p class="text-accent letter-spacing-1 uppercase ff-sand-cond">So, you want to travel to space </p>
+                    </div>
+                </div>
+                <div style="flex-basis: 100%;">
+                    <div>
+                        <p class="text-light">Subheading 1 - Bellefair Regular - 28px</p>
+                        <p class="ff-sand-cond fs-200 uppercase letter-spacing-3">384,400 km</p>
+                    </div>
+                    <div>
+                        <p class="text-light fs-300">Subheading 2 - Barlow Condensed Regular - 14px - 2.35characracter space</p>
+                        <p class="fs-200 letter-spacing-3">Avg. Distance</p>
+                    </div>
+                    <div>
+                        <p class="text-light">Nav Text- Barlow Condensed Regular - 16px 2.7 character space</p>
+                        <p class="letter-spacing-3 fs-200">Europa</p>
+                    </div>
+                    <div>
+                        <p class="text-light">Body Text</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quo deserunt dolores. Velit delectus suscipit dicta sequi, eaque harum fuga quod, mollitia placeat libero beatae id reiciendis odit laboriosam est aperiam veritatis odio a ex assumenda similique repudiandae recusandae, culpa eligendi? Tempora provident a nihil iure est, quasi commodi quod?</p>
+                    </div>
+                </div>
+    
+            </div>
+            
+        </section>
+
+        <section class="flow" id="interactive-elements">
+            <h2 class="numbered-title"><span>03</span>Interactive Elements</h2>
+
+            <!-- navigation -->
+            <div>
+                <nav>
+                    <ul class="primary-navigation flex underline-indicators">
+                        <li class="active"><a class="uppercase text-light ff-sand-cond letter-spacing-2" href="#"> <span>01</span> Active</a></li>
+                        <li><a class="uppercase text-light ff-sand-cond letter-spacing-2" href="#"> <span>02</span> Hovered</a></li>
+                        <li><a class="uppercase text-light ff-sand-cond letter-spacing-2" href="#"> <span>03</span> Idle</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flex">
+                <div style="margin-top: 5rem;">
+                    <!-- explore button -->
+                    <a href="#" class="large-button uppercase fs-600 ff-serif bg-white text-dark">Explore</a>
+                </div>
+                <div style="margin-bottom: 50vh;--flow-space:4rem" class="flow">
+                    <!-- tab -->
+                    <div class="flex underline-indicators tab-list">
+                        <button aria-selected="true" class="text-light uppercase ff-sans-cond  active">Moon</button>
+                        <button aria-selected="false" class="text-light uppercase ff-sans-cond ">Mars</button>
+                        <button aria-selected="false" class="text-light uppercase ff-sans-cond ">Europa</button>
+                    </div>
+                    <!-- Dots -->
+                    <div class="dots-indicators flex">
+                        <button aria-selected="true"> <span class="sr-only">Slide Title</span></button>
+                        <button aria-selected="false"> <span class="sr-only">Slide Title</span></button>
+                        <button aria-selected="false"> <span class="sr-only">Slide Title</span></button>
+                    </div>
+                    <!-- numbers -->
+                    <div class="number-indicators">
+                        <button aria-selected="true" class="active text-dark">1</button>
+                        <button aria-selected="false" class="bg-dark text-light">2</button>
+                        <button aria-selected="false" class="bg-dark text-light"> 3</button>
+                    </div>
+                </div>
+            </div>
+            
+        
+        </section>
+    </div>
+    
+
+    
+</body>
+</html>
